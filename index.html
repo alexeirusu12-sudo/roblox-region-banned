@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Unavailable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --red: #ff3b3b;
+            --dark: #0b0b0f;
+            --panel: #15151d;
+            --text-muted: #b5b5c3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: radial-gradient(circle at top, #1b1b2f, #050509);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+
+        .card {
+            background: linear-gradient(180deg, #1a1a26, #101018);
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 640px;
+            width: 90%;
+            box-shadow:
+                0 0 40px rgba(255, 59, 59, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+            animation: fadeIn 1s ease-out;
+            position: relative;
+        }
+
+        .badge {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ff6a6a, #ff2e2e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+            box-shadow: 0 0 25px rgba(255, 59, 59, 0.6);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            font-size: 34px;
+            letter-spacing: 0.5px;
+            color: var(--red);
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            text-align: center;
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 14px;
+            color: #7f7f95;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">!</div>
+
+        <h1>Roblox Has Been Permanently Banned</h1>
+
+        <p>
+            Roblox is no longer accessible in your country due to regulatory
+            restrictions.<br><br>
+            We are sorry for the inconvenience.
+        </p>
+
+        <div class="footer">
+            Error Code: REGION_RESTRICTED
+        </div>
+    </div>
+</body>
+</html>
